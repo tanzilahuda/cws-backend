@@ -8,11 +8,12 @@ var AuthConfig= require('../middlewares/auth.middleware');
 
 // http://localhost:9017/user/register
 userRouter.post('/register',UserController.registerUser);
-
+//http://localhost:9017/user/login
 userRouter.post('/login',UserController.loginUser);
 
 userRouter.post('/checkusername',UserController.checkUsername);
 
-userRouter.post('/changePassword',AuthConfig.authMiddleware,UserController.changePassword);
+//http://localhost:9017/user/changePassword
+userRouter.post('/changePassword',UserController.changePassword);
 
 module.exports=userRouter;
