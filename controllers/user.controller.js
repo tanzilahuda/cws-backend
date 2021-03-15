@@ -106,3 +106,13 @@ exports.changePassword=(request,response) =>{
          }
     })
 }
+
+/*
+
+  {
+      emailId: "",
+      currentPassword: "",
+      newPassword:""
+  }
+
+*/
