@@ -1,13 +1,9 @@
-
-const MongoClient = require('mongodb').MongoClient;
-const uri = "mongodb+srv://tanzilahuda:<hudasiddiqua99>@cluster0.56vsv.mongodb.net/mongoDB1?retryWrites=true&w=majority";
-const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true });
-client.connect(err => {
-  const collection = client.db("test").collection("devices");
-  // perform actions on the collection object
-  client.close();
-});
-
+exports.config={
+    PORT:13899,
+   MONGO_URL: "mongodb+srv://tanzilahuda:<hudasiddiqua99>@cluster0.56vsv.mongodb.net/mongDB1?retryWrites=true&w=majority",
+   MONGO_URL: "mongodb://localhost/cws",
+    JWT_SECRET:'bdkvkdbkdddjdbv'
+}
 
 
 
